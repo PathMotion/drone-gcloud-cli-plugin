@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-docker push maximelebastard/drone-gcloud-cli-plugin
+docker push pathmotion/drone-gcloud-cli-plugin
