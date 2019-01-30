@@ -12,7 +12,7 @@ It uses the official Google Cloud SDK image.
 pipeline:
   copy:
     image: pathmotion/drone-gcloud-cli-plugin
-    command: gcloud datastore indexes create index.yaml
+    cmd: gcloud datastore indexes create index.yaml
     secrets:
       - source: GCLOUD_SERVICE_ACCOUNT
         target: GCLOUD_SERVICE_ACCOUNT
@@ -23,7 +23,7 @@ pipeline:
 
 ## Parameters
 
-* **command** : The command to run. gcloud, gstorage and other official cli commands are available
+* **cmd** : The command to run. gcloud, gstorage and other official cli commands are available
 
 
 ## Secrets
