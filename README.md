@@ -12,6 +12,7 @@ It uses the official Google Cloud SDK image.
 pipeline:
   copy:
     image: pathmotion/drone-gcloud-cli-plugin
+    project: my-google-cloud-project
     cmd: gcloud datastore indexes create index.yaml
     secrets:
       - source: GCLOUD_SERVICE_ACCOUNT
@@ -23,6 +24,7 @@ pipeline:
 
 ## Parameters
 
+* **project** : The google cloud project to use
 * **cmd** : The command to run. gcloud, gstorage and other official cli commands are available
 
 
